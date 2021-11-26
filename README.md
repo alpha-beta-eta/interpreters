@@ -1,2 +1,2 @@
 # interpreters
-Here are some basic interpreters which I think of fundamental importance.
+Here are some naive interpreters which I think of fundamental importance.
