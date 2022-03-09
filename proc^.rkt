@@ -19,8 +19,8 @@
        (interp body env^)))
     ((,op ,e1 ,e2)
      (guard (memq op '(+ - *)))
-     (let ((v1 (interp e1 env))
-           (v2 (interp e2 env)))
+     (let* ((v1 (interp e1 env))
+            (v2 (interp e2 env)))
        (case op
          ((+) (+ v1 v2))
          ((-) (- v1 v2))
